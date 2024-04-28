@@ -1,4 +1,6 @@
-/* DESKTOP */
+/* -------------------------------------------------------------------- */
+/* ------------------------------ DESKTOP ----------------------------- */
+/* -------------------------------------------------------------------- */
 
 .mobile {
     display: none;
@@ -8,7 +10,9 @@
     display: none;
 }
 
-/* LARGE TABLET */
+/* -------------------------------------------------------------------- */
+/* --------------------------- LARGE TABLET --------------------------- */
+/* -------------------------------------------------------------------- */
 
 @media (max-width: 800px) {
     .desktop {
@@ -24,7 +28,9 @@
     }
 }
 
-/* SMALL TABLET */
+/* -------------------------------------------------------------------- */
+/* --------------------------- SMALL TABLET --------------------------- */
+/* -------------------------------------------------------------------- */
 
 @media (max-width: 600px) {
     .tablet {
@@ -54,6 +60,8 @@
         text-align: center;
         transition: 0.3s;
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
     }
 
     .nav-menu.active {
@@ -83,27 +91,28 @@
     }
 }
 
-/* PHONE */
+/* -------------------------------------------------------------------- */
+/* ------------------------------ MOBILE ------------------------------ */
+/* -------------------------------------------------------------------- */
 
 @media (max-width: 480px) {
-
     nav {
         padding: 20px 25px 20px 25px;
-      }
+    }
 
-      .pivot {
+    .pivot {
         width: 80%;
         display: flex;
         top: 100px;
-      }
-      
-      .control-btns {
+    }
+
+    .control-btns {
         flex-wrap: wrap;
         gap: 20px;
         justify-content: center;
-      }
-      
-      .justified-grid-gallery {
+    }
+
+    .justified-grid-gallery {
         position: absolute;
         top: 240px; /* Position .grid just below .pivot */
         /* left: 0; Align .grid to the left of .pivot */
@@ -117,9 +126,9 @@
         padding-bottom: 100px;
         /* margin: 0!important; We use !important to avoid gaps in some environments. */
         /* padding: 0 !important; We use !important to avoid gaps in some environments. */
-      }
+    }
 
-      .filter-div {
+    .filter-div {
         pointer-events: none;
-      }
+    }
 }

@@ -410,6 +410,7 @@ html:not(.no-js) [data-aos^=fade][data-aos^=fade].aos-animate.justified-grid-gal
 .btn.dark:not(.active) {
   border-radius: 0;
   box-shadow: none;
+  background-color: transparent;
   border-bottom: 1px solid transparent;
 }
 

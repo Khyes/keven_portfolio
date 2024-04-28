@@ -35,7 +35,7 @@
 /* -------------------------------------------------------------------- */
 
 .dark {
-    --blend-mode: color;
+    --blend-mode: color-burn;
     --background-color: #181818;
     --background-color-light: #00000080;
     --text-color: white;
@@ -44,6 +44,6 @@
     --thanks-background: #ffffffCC;
     --thanks-color: #000000ff;
     --shadow-color: 55deg 30% 0%;
-    --background-opacity: 0.5;
+    --background-opacity: 1;
 }
 

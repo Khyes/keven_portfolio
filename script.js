@@ -48,8 +48,7 @@ Fancybox.bind("[data-fancybox]", {
                 "toggle1to1",
                 "rotateCCW",
                 "rotateCW",
-                "flipX",
-                "flipY",
+
             ],
             right: ["slideshow", "thumbs", "close"],
         },

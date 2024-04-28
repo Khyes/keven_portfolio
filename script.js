@@ -56,6 +56,8 @@ Fancybox.bind("[data-fancybox]", {
     },
 });
 
+
+
 $('.mode').click(function() {
     $('html, body, *').toggleClass("dark");
     $(this).toggleClass("off");

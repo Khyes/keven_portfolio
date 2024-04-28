@@ -48,7 +48,7 @@
         left: -100%;
         top: 5rem;
         flex-direction: column;
-        background-color: #fff;
+        background-color: var(--background-color-light);
         width: 100%;
         border-radius: 10px;
         text-align: center;
@@ -81,4 +81,45 @@
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
+}
+
+/* PHONE */
+
+@media (max-width: 480px) {
+
+    nav {
+        padding: 20px 25px 20px 25px;
+      }
+
+      .pivot {
+        width: 80%;
+        display: flex;
+        top: 100px;
+      }
+      
+      .control-btns {
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+      }
+      
+      .justified-grid-gallery {
+        position: absolute;
+        top: 240px; /* Position .grid just below .pivot */
+        /* left: 0; Align .grid to the left of .pivot */
+        width: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-wrap: wrap;
+        grid-gap: var(--space);
+        list-style: none;
+        padding-bottom: 100px;
+        /* margin: 0!important; We use !important to avoid gaps in some environments. */
+        /* padding: 0 !important; We use !important to avoid gaps in some environments. */
+      }
+
+      .filter-div {
+        pointer-events: none;
+      }
 }

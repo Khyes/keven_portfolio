@@ -274,10 +274,11 @@ to {
     transition: var(--f-button-transition);
 }
 @media(hover: hover) {
-    .f-button: hover:not([disabled]) {
+    .f-button:hover:not([disabled]) {
     color: var(--f-button-hover-color);
     background-color: var(--f-button-hover-bg);
 }
+
 .f-button:active:not([disabled]) {
     background-color: var(--f-button-active-bg);
 }
@@ -1097,4 +1098,5 @@ html.with-fancybox body.hide-scrollbar {
     z-index: 30;
     user-select: none;
     pointer-events: none;
+}
 }

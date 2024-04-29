@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
     function slowScroll(e) {
         e.preventDefault();
         const deltaY = e.deltaY;
-        const sensitivity = 0.2; // Adjust sensitivity to control scrolling speed
+        const sensitivity = 0.1; // Adjust sensitivity to control scrolling speed
         targetScrollY += deltaY * sensitivity;
         targetScrollY = Math.max(0, Math.min(targetScrollY, document.documentElement.scrollHeight - window.innerHeight));
         console.log(currentScrollY);

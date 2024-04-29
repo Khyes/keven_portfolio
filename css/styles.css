@@ -76,6 +76,10 @@ body {
   text-align: center;
 }
 
+.mode:hover {
+  transform: scale(1.1);
+}
+
 .mode:before {
   content: "";
   position: absolute;
@@ -264,6 +268,7 @@ nav {
   font-weight: 600;
   font-size: 14px;
   transition: 500ms;
+  letter-spacing: 0.5px;
 }
 
 .btn:hover {
@@ -419,6 +424,10 @@ html:not(.no-js) [data-aos^=fade][data-aos^=fade].aos-animate.justified-grid-gal
 
 .btn.dark:not(.active):hover {
   border-bottom: 1px solid white;
+}
+
+.background-img.dark {
+  background: none;
 }
 
 .material-symbols-outlined.dark {

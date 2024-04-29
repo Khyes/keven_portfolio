@@ -1,3 +1,33 @@
+document.addEventListener("DOMContentLoaded", function() {
+    let targetScrollY = 0;
+    let currentScrollY = window.scrollY;
+
+    function slowScroll(e) {
+        e.preventDefault();
+        const deltaY = e.deltaY;
+        const sensitivity = 0.2; // Adjust sensitivity to control scrolling speed
+        targetScrollY += deltaY * sensitivity;
+        targetScrollY = Math.max(0, Math.min(targetScrollY, document.documentElement.scrollHeight - window.innerHeight));
+        console.log(currentScrollY);
+        console.log(deltaY);
+        updateScroll();
+    }
+
+    function updateScroll() {
+        const easing = 0.1; // Adjust easing for smoother scrolling
+        const distance = targetScrollY - currentScrollY;
+        currentScrollY += distance * easing;
+
+        window.scrollTo(0, currentScrollY);
+    }
+
+    document.addEventListener("wheel", slowScroll, { passive: false });
+});
+
+
+
+
+
 window.addEventListener('load', () => {
     const loading = document.getElementById('loading');
     loading.style.opacity = "0";

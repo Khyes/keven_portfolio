@@ -26,7 +26,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-
+tippy('[data-tippy-content]', {
+    placement:'left',
+    
+});
 
 window.addEventListener('load', () => {
     const loading = document.getElementById('loading');

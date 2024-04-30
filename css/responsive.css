@@ -46,7 +46,7 @@
     }
 
     .links.mobile {
-        display: flex;
+        display: none;
     }
 
     .nav-menu {

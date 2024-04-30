@@ -183,7 +183,6 @@ nav {
   display: flex;
   align-items: center;
   gap: 10px;
-  width: 30%;
 }
 
 .name span {
@@ -436,4 +435,35 @@ html:not(.no-js) [data-aos^=fade][data-aos^=fade].aos-animate.justified-grid-gal
 
 .material-symbols-outlined.dark {
   font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+  
+/* -------------------------------------------------------------------- */
+/* ------------------------- INSTAGRAM BTN ------------------------- */
+/* -------------------------------------------------------------------- */
+
+.instagram {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--text-color);
+  cursor: pointer;
+}
+
+.instagram a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.instagram:hover {
+  transform: scale(1.1);
 }
